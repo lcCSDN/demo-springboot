@@ -1,0 +1,25 @@
+
+server:
+  port: 8083
+
+spring:
+  datasource:
+    username: root
+    password: lcmysql
+    #url中database为对应的数据库名称
+    url: jdbc:mysql://localhost:3306/demo_database?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+
+mybatis:
+# mapper.xml的路径
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.lc.demospringboot.vo
+
+#showSql
+logging:
+  level:
+    com.example.demo.mapper: debug
+
+
