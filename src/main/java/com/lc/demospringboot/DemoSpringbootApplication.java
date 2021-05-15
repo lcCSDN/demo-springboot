@@ -13,7 +13,7 @@ import org.springframework.cglib.proxy.Enhancer;
 import java.util.stream.Stream;
 
 @SpringBootApplication
-@MapperScan(basePackages = "com.lc.demospringboot.mapper")
+@MapperScan(basePackages = "com.lc.demospringboot.mapper;com.lc.demospringboot.login.mapper")
 public class DemoSpringbootApplication {
 
     public static void main(String[] args) {
