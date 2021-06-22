@@ -5,7 +5,7 @@ import lombok.Data;
 
 /**
  * opu_user
- * @author 
+ * @author
  */
 @Data
 public class OpuUser implements Serializable {

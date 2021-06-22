@@ -33,6 +33,7 @@ public class StreamTest {
         map.put("l2","莉丝");
         map.put("z","张三");
 
+
         Stream map1 = map.entrySet().stream();
 //        Stream map2 = map1.filter(s2->s2.containsKey("l"));
 
@@ -48,13 +49,8 @@ public class StreamTest {
         Stream<Integer> integerStream = stream.map(str -> Integer.parseInt(str));
         integerStream.forEach(i-> System.out.println(i+"排序"));
 
-
-
-
-
         Stream list1 =  list.stream().filter(s -> s.equals("李四"));
         list1.forEach(s2 -> System.out.println(s2));
-
 
         List<String> list2 = new ArrayList<>();
         list.add("aaa bbb ccc");
@@ -79,4 +75,8 @@ public class StreamTest {
     public static void get(String... num){
 
     }
+
+    class Liest implements Cloneable{}
 }
+
+

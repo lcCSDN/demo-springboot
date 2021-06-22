@@ -9,6 +9,7 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cglib.proxy.Enhancer;
+import org.springframework.core.env.Environment;
 
 import java.util.stream.Stream;
 
@@ -18,7 +19,7 @@ public class DemoSpringbootApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(DemoSpringbootApplication.class, args);
-
+        System.out.println("ssssssddd");
         int [] x = new int []{1,2};
 //        PersonInterfaceImpl personInterfaceImpl = new PersonInterfaceImpl();
 //
@@ -38,7 +39,6 @@ public class DemoSpringbootApplication {
 //        PersonPenter personPenter =(PersonPenter) enhancer.create();
 
 //        personPenter.OutPerson();
-
 
     }
 

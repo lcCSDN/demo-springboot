@@ -32,6 +32,9 @@ public class PersonController {
     @Autowired
     private ComsureService comsureService;
 
+    @Autowired
+    WelcomeController welcomeController;
+
     @RequestMapping("/getPerson")
     public void getPerson(){
 
@@ -54,7 +57,6 @@ public class PersonController {
 
         comsuerList.stream().forEach(comsuer ->{
             try {
-
                 Field field = comsuer.getClass().getDeclaredField("type");
                 field.setAccessible(true);
                 System.out.println(field.get(comsuer)+"field.get()");
@@ -62,6 +64,8 @@ public class PersonController {
                 e.printStackTrace();
             }
         });
+
+        welcomeController.wecometo();
 
         System.out.println(minByComsuer+"comparator找出最小值");
 

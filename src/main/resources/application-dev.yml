@@ -11,7 +11,6 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 
-
 mybatis:
 # mapper.xml的路径
   mapper-locations: classpath:mapper/*.xml

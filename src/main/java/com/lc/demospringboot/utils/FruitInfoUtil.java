@@ -21,6 +21,9 @@ public class FruitInfoUtil {
         //对数据进行分组
         Map<String,List<Comsuer>> map = comsuerList.stream().collect(Collectors.groupingBy(Comsuer::getType));
 
+        Map<String,String> map5 =  comsuerList.stream().collect(Collectors.toMap(Comsuer::getId,Comsuer::getName,(n1,n2)->n1));
+         System.out.println(map5+"list转map");
+
 
         Arrays.stream(fields).forEach(field -> {
             //获取到添加了selectlist注解的字段
